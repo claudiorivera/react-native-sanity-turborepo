@@ -27,16 +27,13 @@ export const fetchPostById = async (id: string) =>
 		await client.fetch(`*[_type == "post" && _id == $id][0]`, { id }),
 	);
 
-export const createPost = async (createpostDto: CreatePostDto) =>
-	postSchema.parse(
-		await client.create({
-			_type: "post",
-			...createpostDto,
-		}),
-	);
+export const createPost = (createpostDto: CreatePostDto) =>
+	client.create({
+		_type: "post",
+		...createpostDto,
+	});
 
-export const deletePost = async (id: string) =>
-	postSchema.parse(await client.delete(id));
+export const deletePost = (id: string) => client.delete(id);
 
 // TYPES
 export type CreatePostDto = z.infer<typeof createPostSchema>;

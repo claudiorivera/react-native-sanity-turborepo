@@ -12,8 +12,10 @@ const PostCard: React.FC<{
 	return (
 		<div className="flex flex-row rounded-lg bg-white/10 p-4 transition-all hover:scale-[101%]">
 			<div className="flex-grow">
-				<h2 className="text-2xl font-bold text-pink-400">{post.title}</h2>
-				<p className="mt-2 text-sm">{post.content}</p>
+				<Link href={`/posts/${post._id}`}>
+					<h2 className="text-2xl font-bold text-pink-400">{post.title}</h2>
+					<p className="mt-2 text-sm">{post.content}</p>
+				</Link>
 			</div>
 			<div>
 				<span
@@ -111,14 +113,11 @@ const Home: NextPage = () => {
 									<div className="flex w-full flex-col gap-4">
 										{postQuery.data?.map((p) => {
 											return (
-												<Link key={p._id} href={`/posts/${p._id}`}>
-													<PostCard
-														post={p}
-														onPostDelete={() =>
-															deletePostMutation.mutate(p._id)
-														}
-													/>
-												</Link>
+												<PostCard
+													key={p._id}
+													post={p}
+													onPostDelete={() => deletePostMutation.mutate(p._id)}
+												/>
 											);
 										})}
 									</div>
