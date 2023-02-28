@@ -11,7 +11,7 @@ import { initTRPC } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import superjson from "superjson";
 import { ZodError } from "zod";
-import { client } from "@acme/client";
+import * as client from "@acme/client";
 
 /**
  * 1. CONTEXT
