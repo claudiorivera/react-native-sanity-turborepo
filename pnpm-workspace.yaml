@@ -1,7 +1,7 @@
 packages:
-  - apps/cms
   - apps/mobile
   - apps/web
   - packages/api
   - packages/client
   - packages/config/*
+  - packages/schemas

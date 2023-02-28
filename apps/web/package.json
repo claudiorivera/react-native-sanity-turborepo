@@ -15,15 +15,21 @@
 	"dependencies": {
 		"@acme/api": "*",
 		"@acme/client": "*",
+		"@acme/schemas": "*",
 		"@acme/tailwind-config": "*",
+		"@portabletext/react": "2.0.2",
+		"@sanity/image-url": "1.0.2",
+		"@sanity/vision": "3.5.0",
 		"@tanstack/react-query": "4.24.10",
 		"@trpc/client": "10.13.0",
 		"@trpc/next": "10.13.0",
 		"@trpc/react-query": "10.13.0",
 		"@trpc/server": "10.13.0",
 		"next": "13.2.1",
+		"next-sanity": "4.1.5",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
+		"sanity": "3.5.0",
 		"zod": "3.20.6"
 	},
 	"devDependencies": {

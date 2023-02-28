@@ -44,7 +44,7 @@ const CreatePostForm: React.FC = () => {
 	});
 
 	return (
-		<div className="flex w-full max-w-2xl flex-col p-4">
+		<div className="mx-auto flex w-full max-w-2xl flex-col p-4">
 			<input
 				className="mb-2 rounded bg-white/10 p-2 text-white"
 				value={title}
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
 					) : (
 						<p>Loading...</p>
 					)}
-					<div className="mt-auto w-full">
+					<div className="mx-auto mt-auto w-full">
 						<CreatePostForm />
 					</div>
 				</div>
