@@ -1,5 +1,11 @@
-import React from "react";
-import { Button, Text, TextInput, TouchableOpacity, View } from "react-native";
+import React, { useState } from "react";
+import {
+	RefreshControl,
+	Text,
+	TextInput,
+	TouchableOpacity,
+	View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { FlashList } from "@shopify/flash-list";
 import { Stack, useRouter } from "expo-router";
@@ -78,7 +84,7 @@ const CreatePost: React.FC = () => {
 					});
 				}}
 			>
-				<Text className="font-semibold text-white">Publish post</Text>
+				<Text className="text-center font-semibold text-white">Create</Text>
 			</TouchableOpacity>
 		</View>
 	);
@@ -91,31 +97,25 @@ const Index = () => {
 		onSettled: () => postQuery.refetch(),
 	});
 
+	const [refreshing, setRefreshing] = useState(false);
+
+	const onRefresh = () => {
+		void postQuery.refetch();
+		setRefreshing(false);
+	};
+
 	return (
 		<SafeAreaView className="bg-[#1F104A]">
 			{/* Changes page title visible on the header */}
 			<Stack.Screen options={{ title: "Home Page" }} />
 			<View className="h-full w-full p-4">
-				<Text className="mx-auto pb-2 text-5xl font-bold text-white">
-					Create <Text className="text-pink-400">T3</Text> Turbo
-				</Text>
-
-				<Button
-					onPress={() => void postQuery.refetch()}
-					title="Refresh posts"
-					color={"#f472b6"}
-				/>
-
-				<View className="py-2">
-					<Text className="font-semibold italic text-white">
-						Press on a post
-					</Text>
-				</View>
-
 				<FlashList
 					data={postQuery.data}
 					estimatedItemSize={20}
 					ItemSeparatorComponent={() => <View className="h-2" />}
+					refreshControl={
+						<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+					}
 					renderItem={(p) => (
 						<PostCard
 							post={p.item}

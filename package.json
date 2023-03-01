@@ -1,6 +1,7 @@
 {
 	"name": "react-native-sanity-turborepo",
 	"private": true,
+	"license": "MIT",
 	"engines": {
 		"node": ">=18.0.0"
 	},

@@ -1,8 +1,9 @@
 {
 	"name": "eslint-config-acme",
+	"private": true,
 	"version": "0.0.0",
-	"main": "index.js",
 	"license": "MIT",
+	"main": "index.js",
 	"dependencies": {
 		"@types/eslint": "8.21.1",
 		"@typescript-eslint/eslint-plugin": "5.54.0",

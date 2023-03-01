@@ -1,8 +1,9 @@
 {
 	"name": "@acme/tailwind-config",
+	"private": true,
 	"version": "0.1.0",
-	"main": "index.js",
 	"license": "MIT",
+	"main": "index.js",
 	"files": [
 		"index.js",
 		"postcss.js"
