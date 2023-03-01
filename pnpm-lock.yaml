@@ -43,7 +43,7 @@ importers:
       expo: 48.0.4
       expo-constants: 14.2.1
       expo-linking: 4.0.1
-      expo-router: 1.2.0
+      expo-router: 1.2.1
       expo-splash-screen: 0.18.1
       expo-status-bar: 1.4.4
       nativewind: 2.0.11
@@ -66,7 +66,7 @@ importers:
       expo: 48.0.4_@babel+core@7.21.0
       expo-constants: 14.2.1_expo@48.0.4
       expo-linking: 4.0.1_expo@48.0.4
-      expo-router: 1.2.0_ryihezjn4vw46cprwozgqy5ftq
+      expo-router: 1.2.1_ryihezjn4vw46cprwozgqy5ftq
       expo-splash-screen: 0.18.1_7czcndyv62ee3cxhpbfezhkq4m
       expo-status-bar: 1.4.4
       nativewind: 2.0.11_dmdrd7wro7is5ymtgffolhsaq4
@@ -2149,8 +2149,8 @@ packages:
       - supports-color
     dev: false
 
-  /@expo/metro-runtime/1.0.0_react-native@0.71.3:
-    resolution: {integrity: sha512-opxiGwjFHQAkkwSm9wSBXMLVMJj3U80L8qgsfOl/M+y3+2Ugx1lV3mVPHYcwUQ6e9MJWWPK1ZUEkCTneOz36Cw==}
+  /@expo/metro-runtime/1.0.1_react-native@0.71.3:
+    resolution: {integrity: sha512-1vNXj5N92WuQ9zp2rAATe4YYYaLV3X9WYleAuzWEhfrPM85uHD3PUUGL3XJ0RC6t3fUeZuGpajElCTjJiAL66A==}
     peerDependencies:
       react-native: '*'
     dependencies:
@@ -6414,8 +6414,8 @@ packages:
       invariant: 2.2.4
     dev: false
 
-  /expo-router/1.2.0_ryihezjn4vw46cprwozgqy5ftq:
-    resolution: {integrity: sha512-uFY1y2sK9HdwhzfZpF4IF8WdL2MeqDv2cvF0NC9zFvVGCk1mwNFOOJPgIar5aqguvhFkO3kixDUAMSydZIRArg==}
+  /expo-router/1.2.1_ryihezjn4vw46cprwozgqy5ftq:
+    resolution: {integrity: sha512-w0+f+GO99+uYJ6ndOk1DDNYEbwYPwSmGgN+wUMb7gdnUPKpsJ+hVAozfG6EzTzf9ClHarhGEcbl8V0tafYOgWQ==}
     peerDependencies:
       '@react-navigation/drawer': ^6.5.8
       expo: ^48.0.0
@@ -6434,7 +6434,7 @@ packages:
         optional: true
     dependencies:
       '@bacons/react-views': 1.1.3_react-native@0.71.3
-      '@expo/metro-runtime': 1.0.0_react-native@0.71.3
+      '@expo/metro-runtime': 1.0.1_react-native@0.71.3
       '@radix-ui/react-slot': 1.0.1_react@18.2.0
       '@react-navigation/bottom-tabs': 6.5.7_lzeolizq5fdjozeb3mtrlbatoi
       '@react-navigation/native': 6.1.6_yqouayos4dnow7nnkhah4yzuzq
