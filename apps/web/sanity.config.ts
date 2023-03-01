@@ -11,7 +11,7 @@ if (!projectId || !dataset)
 		"Missing NEXT_PUBLIC_SANITY_PROJECT_ID and NEXT_PUBLIC_SANITY_DATASET env vars",
 	);
 
-export default defineConfig({
+const config = defineConfig({
 	basePath: "/studio", // <-- important that `basePath` matches the route you're mounting your studio from, it applies to both `/pages` and `/app`
 	projectId,
 	dataset,
@@ -20,3 +20,5 @@ export default defineConfig({
 		types: schemaTypes,
 	},
 });
+
+export default config;

@@ -1,4 +1,4 @@
 {
 	"extends": "../../tsconfig.json",
-	"include": ["*.ts", "posts/*.ts"]
+	"include": ["index.ts", "sanity.ts"]
 }

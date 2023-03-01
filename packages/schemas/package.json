@@ -1,13 +1,10 @@
 {
 	"name": "@acme/schemas",
+	"private": true,
 	"version": "0.1.0",
+	"license": "MIT",
 	"main": "./index.ts",
 	"types": "./index.ts",
-	"license": "MIT",
-	"scripts": {
-		"clean": "rm -rf .turbo node_modules",
-		"with-env": "dotenv -e ../../.env --"
-	},
 	"devDependencies": {
 		"typescript": "4.9.5"
 	}
