@@ -117,7 +117,7 @@ importers:
       styled-components: 5.3.8
       tailwindcss: 3.2.7
       typescript: 4.9.5
-      zod: 3.20.6
+      zod: 3.21.4
     dependencies:
       '@acme/api': link:../../packages/api
       '@acme/schemas': link:../../packages/schemas
@@ -135,7 +135,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       sanity: 3.5.1_4b4yjg5ws2gg6dcar3nnejb2um
-      zod: 3.20.6
+      zod: 3.21.4
     devDependencies:
       '@codemirror/theme-one-dark': 6.1.1
       '@types/node': 18.14.6
@@ -159,13 +159,13 @@ importers:
       eslint-config-acme: 0.0.0
       superjson: 1.12.2
       typescript: 4.9.5
-      zod: 3.20.6
+      zod: 3.21.4
     dependencies:
       '@acme/client': link:../client
       '@trpc/client': 10.14.0_@trpc+server@10.14.0
       '@trpc/server': 10.14.0
       superjson: 1.12.2
-      zod: 3.20.6
+      zod: 3.21.4
     devDependencies:
       eslint: 8.35.0
       eslint-config-acme: link:../config/eslint
@@ -175,10 +175,10 @@ importers:
     specifiers:
       '@sanity/client': 5.2.2
       typescript: 4.9.5
-      zod: 3.20.6
+      zod: 3.21.4
     dependencies:
       '@sanity/client': 5.2.2
-      zod: 3.20.6
+      zod: 3.21.4
     devDependencies:
       typescript: 4.9.5
 
@@ -12868,6 +12868,6 @@ packages:
       readable-stream: 3.6.0
     dev: false
 
-  /zod/3.20.6:
-    resolution: {integrity: sha512-oyu0m54SGCtzh6EClBVqDDlAYRz4jrVtKwQ7ZnsEmMI9HnzuZFj8QFwAY1M5uniIYACdGvv0PBWPF2kO0aNofA==}
+  /zod/3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: false
