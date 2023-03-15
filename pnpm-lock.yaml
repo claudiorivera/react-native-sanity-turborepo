@@ -173,11 +173,11 @@ importers:
 
   packages/client:
     specifiers:
-      '@sanity/client': 5.2.2
+      '@sanity/client': 5.3.0
       typescript: 4.9.5
       zod: 3.21.4
     dependencies:
-      '@sanity/client': 5.2.2
+      '@sanity/client': 5.3.0
       zod: 3.21.4
     devDependencies:
       typescript: 4.9.5
@@ -3186,6 +3186,17 @@ packages:
       - supports-color
     dev: false
 
+  /@sanity/client/5.3.0:
+    resolution: {integrity: sha512-GUu33gDy5Lx9FNyRGeRNrn2ZYNNthn3Qj2y4GPtb3MkdUtdWHKXmCi3S7nqusTshwS0Uz/w+wX9/h5Nbq9iofg==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@sanity/eventsource': 4.0.0
+      get-it: 8.0.9
+      rxjs: 7.8.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@sanity/color/2.2.3:
     resolution: {integrity: sha512-b4e6JAHHa/tKpAnLOAHaJyNEHO1l/g2oecN22FWkhTAuKCINPNhPeoeUn5rK5ngKzbXrvynBd/h2849lld3FRg==}
     dev: false
@@ -3388,7 +3399,7 @@ packages:
   /@sanity/types/3.5.0:
     resolution: {integrity: sha512-6gWA/tU+5yUbYVPsf7xlBrbewgZ1iOfFke+aGyJYbWe8hUGf/3FJsKePyjA8FCCuprDu3Y9CySKOLNqi4dwHmQ==}
     dependencies:
-      '@sanity/client': 5.2.2
+      '@sanity/client': 5.3.0
       '@types/react': 18.0.28
     transitivePeerDependencies:
       - supports-color
@@ -3397,7 +3408,7 @@ packages:
   /@sanity/types/3.6.0:
     resolution: {integrity: sha512-oYZBKLdQK9mPonNq023FtbzeiQa3EqXs9X4nul5yH63hDF9qghAop9W9ODohr5V15Gf4oEEBcM9F7pp+vtawzg==}
     dependencies:
-      '@sanity/client': 5.2.2
+      '@sanity/client': 5.3.0
       '@types/react': 18.0.28
     transitivePeerDependencies:
       - supports-color
