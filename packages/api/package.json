@@ -13,8 +13,8 @@
 	},
 	"dependencies": {
 		"@acme/client": "*",
-		"@trpc/client": "10.15.0",
-		"@trpc/server": "10.15.0",
+		"@trpc/client": "10.16.0",
+		"@trpc/server": "10.16.0",
 		"superjson": "1.12.2",
 		"zod": "3.21.4"
 	},
