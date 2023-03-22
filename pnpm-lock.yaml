@@ -173,11 +173,11 @@ importers:
 
   packages/client:
     specifiers:
-      '@sanity/client': 5.3.0
+      '@sanity/client': 5.3.1
       typescript: 5.0.2
       zod: 3.21.4
     dependencies:
-      '@sanity/client': 5.3.0
+      '@sanity/client': 5.3.1
       zod: 3.21.4
     devDependencies:
       typescript: 5.0.2
@@ -3197,6 +3197,17 @@ packages:
       - supports-color
     dev: false
 
+  /@sanity/client/5.3.1:
+    resolution: {integrity: sha512-8xN0wQzUfzDXKXNWj3Kx9mU3tYXJ4OCKnKbT17rsJKvDcpx7tacm2waPYrDCqEkxmGgtoZa/knpbV1keSmpLGw==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@sanity/eventsource': 5.0.0
+      get-it: 8.0.9
+      rxjs: 7.8.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@sanity/color/2.2.3:
     resolution: {integrity: sha512-b4e6JAHHa/tKpAnLOAHaJyNEHO1l/g2oecN22FWkhTAuKCINPNhPeoeUn5rK5ngKzbXrvynBd/h2849lld3FRg==}
     dev: false
@@ -3219,6 +3230,15 @@ packages:
     resolution: {integrity: sha512-W0AD141JILOySJ177j2+HTr5k4tWNyXjGsr0dDXJzpqlwZ09J/uPHI73hMe5XtoFumPa9Bj6jy8uu2qdZX84NQ==}
     dependencies:
       event-source-polyfill: 1.0.25
+      eventsource: 2.0.2
+    dev: false
+
+  /@sanity/eventsource/5.0.0:
+    resolution: {integrity: sha512-0ewT+BDzfiamHwitUfRcwsl/RREHjWv6VNZvQ8Q4OnnNKXfEEGXbWmqzof0okOTkp4XELgyliht4Qj28o9AU2g==}
+    dependencies:
+      '@types/event-source-polyfill': 1.0.1
+      '@types/eventsource': 1.1.11
+      event-source-polyfill: 1.0.31
       eventsource: 2.0.2
     dev: false
 
@@ -3399,7 +3419,7 @@ packages:
   /@sanity/types/3.5.0:
     resolution: {integrity: sha512-6gWA/tU+5yUbYVPsf7xlBrbewgZ1iOfFke+aGyJYbWe8hUGf/3FJsKePyjA8FCCuprDu3Y9CySKOLNqi4dwHmQ==}
     dependencies:
-      '@sanity/client': 5.3.0
+      '@sanity/client': 5.3.1
       '@types/react': 18.0.28
     transitivePeerDependencies:
       - supports-color
@@ -3408,7 +3428,7 @@ packages:
   /@sanity/types/3.7.1:
     resolution: {integrity: sha512-iU3eUKJHJc8gpFUTEe/eIoJA+J6SUJrGDzdyxviJ0MoG8Z0EWwyZ3ps1HCzrfFJTnTRouhK3o5R7Wrar/uml5g==}
     dependencies:
-      '@sanity/client': 5.3.0
+      '@sanity/client': 5.3.1
       '@types/react': 18.0.28
     transitivePeerDependencies:
       - supports-color
@@ -3703,6 +3723,10 @@ packages:
 
   /@types/event-source-polyfill/1.0.1:
     resolution: {integrity: sha512-dls8b0lUgJ/miRApF0efboQ9QZnAm7ofTO6P1ILu8bRPxUFKDxVwFf8+TeuuErmNui6blpltyr7+eV72dbQXlQ==}
+    dev: false
+
+  /@types/eventsource/1.1.11:
+    resolution: {integrity: sha512-L7wLDZlWm5mROzv87W0ofIYeQP5K2UhoFnnUyEWLKM6UBb0ZNRgAqp98qE5DkgfBXdWfc2kYmw9KZm4NLjRbsw==}
     dev: false
 
   /@types/glob/7.2.0:
