@@ -6,7 +6,7 @@
 	"main": "./index.ts",
 	"types": "./index.ts",
 	"dependencies": {
-		"@sanity/client": "5.3.1",
+		"@sanity/client": "5.3.2",
 		"zod": "3.21.4"
 	},
 	"devDependencies": {
