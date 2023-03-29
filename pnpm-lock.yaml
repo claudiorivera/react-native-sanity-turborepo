@@ -10,7 +10,7 @@ importers:
       eslint: 8.36.0
       eslint-config-acme: 0.0.0
       prettier: 2.8.7
-      prettier-plugin-tailwindcss: 0.2.5
+      prettier-plugin-tailwindcss: 0.2.6
       turbo: 1.8.6
       typescript: 5.0.2
     dependencies:
@@ -20,7 +20,7 @@ importers:
       eslint: 8.36.0
       eslint-config-acme: link:packages/config/eslint
       prettier: 2.8.7
-      prettier-plugin-tailwindcss: 0.2.5_it6dmlw7gffs35k5m3t3bb3la4
+      prettier-plugin-tailwindcss: 0.2.6_it6dmlw7gffs35k5m3t3bb3la4
       turbo: 1.8.6
       typescript: 5.0.2
 
@@ -9977,8 +9977,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /prettier-plugin-tailwindcss/0.2.5_it6dmlw7gffs35k5m3t3bb3la4:
-    resolution: {integrity: sha512-vZ/iKieyCx0WTxHbkf5E1rBlv/ybFk8WTT4hL5W2jlVxum2Zbe0jMUpuQdDrpa4z2vnPiJ5KIWCqL/kd16fKYg==}
+  /prettier-plugin-tailwindcss/0.2.6_it6dmlw7gffs35k5m3t3bb3la4:
+    resolution: {integrity: sha512-F+7XCl9RLF/LPrGdUMHWpsT6TM31JraonAUyE6eBmpqymFvDwyl0ETHsKFHP1NG+sEfv8bmKqnTxEbWQbHPlBA==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
