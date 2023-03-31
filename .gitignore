@@ -42,3 +42,5 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+.sanity
