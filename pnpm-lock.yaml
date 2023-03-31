@@ -53,7 +53,7 @@ importers:
       react-native: 0.71.5
       react-native-safe-area-context: 4.5.0
       react-native-screens: 3.20.0
-      tailwindcss: 3.3.0
+      tailwindcss: 3.3.1
       typescript: 5.0.2
     dependencies:
       '@acme/api': link:../../packages/api
@@ -69,7 +69,7 @@ importers:
       expo-router: 1.4.3_7jxqidxdpt6ox5podrx5v5ljsy
       expo-splash-screen: 0.18.1_2btg2bdpxjlf7fs4qep63vspbm
       expo-status-bar: 1.4.4
-      nativewind: 2.0.11_urgeubrbasi7jy6kvhozi6vbsq
+      nativewind: 2.0.11_vubzc37hondlf3dgtrlfwzy45q
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-native: 0.71.5_klxfafkpjmb2537xfoky62a7f4
@@ -84,7 +84,7 @@ importers:
       eslint: 8.37.0
       eslint-config-acme: link:../../packages/config/eslint
       postcss: 8.4.21
-      tailwindcss: 3.3.0_postcss@8.4.21
+      tailwindcss: 3.3.1_postcss@8.4.21
       typescript: 5.0.2
 
   apps/web:
@@ -115,7 +115,7 @@ importers:
       react-dom: 18.2.0
       sanity: 3.8.1
       styled-components: 5.3.9
-      tailwindcss: 3.3.0
+      tailwindcss: 3.3.1
       typescript: 5.0.2
       zod: 3.21.4
     dependencies:
@@ -147,7 +147,7 @@ importers:
       eslint-config-acme: link:../../packages/config/eslint
       postcss: 8.4.21
       styled-components: 5.3.9_7i5myeigehqah43i5u7wbekgba
-      tailwindcss: 3.3.0_postcss@8.4.21
+      tailwindcss: 3.3.1_postcss@8.4.21
       typescript: 5.0.2
 
   packages/api:
@@ -209,11 +209,11 @@ importers:
     specifiers:
       autoprefixer: 10.4.14
       postcss: 8.4.21
-      tailwindcss: 3.3.0
+      tailwindcss: 3.3.1
     devDependencies:
       autoprefixer: 10.4.14_postcss@8.4.21
       postcss: 8.4.21
-      tailwindcss: 3.3.0_postcss@8.4.21
+      tailwindcss: 3.3.1_postcss@8.4.21
 
   packages/schemas:
     specifiers:
@@ -9425,7 +9425,7 @@ packages:
       - supports-color
     dev: false
 
-  /nativewind/2.0.11_urgeubrbasi7jy6kvhozi6vbsq:
+  /nativewind/2.0.11_vubzc37hondlf3dgtrlfwzy45q:
     resolution: {integrity: sha512-qCEXUwKW21RYJ33KRAJl3zXq2bCq82WoI564fI21D/TiqhfmstZOqPN53RF8qK1NDK6PGl56b2xaTxgObEePEg==}
     engines: {node: '>=14.18'}
     peerDependencies:
@@ -9443,7 +9443,7 @@ packages:
       postcss-css-variables: 0.18.0_postcss@8.4.21
       postcss-nested: 5.0.6_postcss@8.4.21
       react-is: 18.2.0
-      tailwindcss: 3.3.0_postcss@8.4.21
+      tailwindcss: 3.3.1_postcss@8.4.21
       use-sync-external-store: 1.2.0_react@18.2.0
     transitivePeerDependencies:
       - react
@@ -12076,8 +12076,8 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /tailwindcss/3.3.0_postcss@8.4.21:
-    resolution: {integrity: sha512-hOXlFx+YcklJ8kXiCAfk/FMyr4Pm9ck477G0m/us2344Vuj355IpoEDB5UmGAsSpTBmr+4ZhjzW04JuFXkb/fw==}
+  /tailwindcss/3.3.1_postcss@8.4.21:
+    resolution: {integrity: sha512-Vkiouc41d4CEq0ujXl6oiGFQ7bA3WEhUZdTgXAhtKxSy49OmKs8rEfQmupsfF0IGW8fv2iQkp1EVUuapCFrZ9g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
