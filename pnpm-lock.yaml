@@ -173,11 +173,11 @@ importers:
 
   packages/client:
     specifiers:
-      '@sanity/client': 5.3.2
+      '@sanity/client': 5.4.1
       typescript: 5.0.2
       zod: 3.21.4
     dependencies:
-      '@sanity/client': 5.3.2
+      '@sanity/client': 5.4.1
       zod: 3.21.4
     devDependencies:
       typescript: 5.0.2
@@ -3143,7 +3143,7 @@ packages:
       chalk: 4.1.2
       esbuild: 0.16.17
       esbuild-register: 3.4.2_esbuild@0.16.17
-      get-it: 8.0.9
+      get-it: 8.1.1
       pkg-dir: 5.0.0
     transitivePeerDependencies:
       - supports-color
@@ -3155,6 +3155,17 @@ packages:
     dependencies:
       '@sanity/eventsource': 5.0.0
       get-it: 8.0.9
+      rxjs: 7.8.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@sanity/client/5.4.1:
+    resolution: {integrity: sha512-BX6fbxVOBQcTU1YqDDXykgp7AvRoNmfA/NI5JR5XW7uy7WWSvKgEYVG6htNDYdkpoyiHxIIF+OVbWQJNmSsPCw==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@sanity/eventsource': 5.0.0
+      get-it: 8.1.1
       rxjs: 7.8.0
     transitivePeerDependencies:
       - supports-color
@@ -3186,7 +3197,7 @@ packages:
     dependencies:
       archiver: 5.3.1
       debug: 3.2.7
-      get-it: 8.0.9
+      get-it: 8.1.1
       lodash: 4.17.21
       mississippi: 4.0.0
       p-queue: 2.4.2
@@ -3241,7 +3252,7 @@ packages:
       '@sanity/uuid': 3.0.1
       debug: 3.2.7
       file-url: 2.0.2
-      get-it: 8.0.9
+      get-it: 8.1.1
       get-uri: 2.0.4
       globby: 10.0.2
       gunzip-maybe: 1.4.2
@@ -3356,7 +3367,7 @@ packages:
   /@sanity/types/3.7.1:
     resolution: {integrity: sha512-iU3eUKJHJc8gpFUTEe/eIoJA+J6SUJrGDzdyxviJ0MoG8Z0EWwyZ3ps1HCzrfFJTnTRouhK3o5R7Wrar/uml5g==}
     dependencies:
-      '@sanity/client': 5.3.2
+      '@sanity/client': 5.4.1
       '@types/react': 18.0.31
     transitivePeerDependencies:
       - supports-color
@@ -3365,7 +3376,7 @@ packages:
   /@sanity/types/3.8.1:
     resolution: {integrity: sha512-MClyM2H84bMbqirr+x6RStrAwceREv1VvWcZkP3NGOBp/OZR14mTt+C388+mOVb/0BYjfN498h/4JL2Zqcm85A==}
     dependencies:
-      '@sanity/client': 5.3.2
+      '@sanity/client': 5.4.1
       '@types/react': 18.0.31
     transitivePeerDependencies:
       - supports-color
@@ -6924,6 +6935,24 @@ packages:
 
   /get-it/8.0.9:
     resolution: {integrity: sha512-Nm54soj8MEXTmkzAR0iWGP/TCAfsueOOWzBTvTB9ch0ubUE/5FbV7tAptbmsYzpk9QzA6zhcadqTCwP3prRfHw==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      debug: 4.3.4
+      decompress-response: 7.0.0
+      follow-redirects: 1.15.2_debug@4.3.4
+      into-stream: 6.0.0
+      is-plain-object: 5.0.0
+      is-retry-allowed: 2.2.0
+      is-stream: 2.0.1
+      parse-headers: 2.0.5
+      progress-stream: 2.0.0
+      tunnel-agent: 0.6.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /get-it/8.1.1:
+    resolution: {integrity: sha512-83P2+3V/3E+KSdlHnGlOr4vCrlV8wDsT580AyJkMtkK/8LtZc0TOCI9bjQXH1sgYnmQTzCoPoPaOAE+a8JZqLQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       debug: 4.3.4
