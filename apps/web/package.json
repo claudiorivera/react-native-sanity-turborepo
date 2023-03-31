@@ -19,7 +19,7 @@
 		"@acme/tailwind-config": "*",
 		"@portabletext/react": "2.0.2",
 		"@sanity/image-url": "1.0.2",
-		"@sanity/vision": "3.7.1",
+		"@sanity/vision": "3.8.1",
 		"@tanstack/react-query": "4.28.0",
 		"@trpc/client": "10.18.0",
 		"@trpc/next": "10.18.0",
@@ -29,7 +29,7 @@
 		"next-sanity": "4.1.6",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"sanity": "3.7.1",
+		"sanity": "3.8.1",
 		"zod": "3.21.4"
 	},
 	"devDependencies": {
