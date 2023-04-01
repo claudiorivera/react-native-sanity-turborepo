@@ -17,6 +17,8 @@ jobs:
   build-lint:
     env:
       DATABASE_URL: file:./db.sqlite
+      NEXT_PUBLIC_SANITY_PROJECT_ID: "abc123"
+      NEXT_PUBLIC_SANITY_DATASET: "production"
     runs-on: ubuntu-latest
 
     steps:
