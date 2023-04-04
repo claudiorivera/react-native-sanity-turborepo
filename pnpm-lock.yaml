@@ -245,8 +245,8 @@ importers:
   packages/client:
     dependencies:
       '@sanity/client':
-        specifier: 5.4.1
-        version: 5.4.1
+        specifier: 5.4.2
+        version: 5.4.2
       zod:
         specifier: 3.21.4
         version: 3.21.4
@@ -3296,6 +3296,17 @@ packages:
       - supports-color
     dev: false
 
+  /@sanity/client@5.4.2:
+    resolution: {integrity: sha512-M/ebzTGwYq+NDGMfBWxKtwtmCRJbBvXxAIQXu/J0vxnr8mXKw8gBQ7GaG0tI4WJ54w5sI6pnrD6mPiKdRHVNYw==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@sanity/eventsource': 5.0.0
+      get-it: 8.1.1
+      rxjs: 7.8.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@sanity/color@2.2.3:
     resolution: {integrity: sha512-b4e6JAHHa/tKpAnLOAHaJyNEHO1l/g2oecN22FWkhTAuKCINPNhPeoeUn5rK5ngKzbXrvynBd/h2849lld3FRg==}
     dev: false
@@ -3492,7 +3503,7 @@ packages:
   /@sanity/types@3.8.2:
     resolution: {integrity: sha512-4v/d8hd64znAqaPsyeS6GbSXEyj2n8triElgYkoKErv6vcy+RepGZBwVpz+q5y2XXVwKPIc1Pvwxr1ARAV8S7w==}
     dependencies:
-      '@sanity/client': 5.4.1
+      '@sanity/client': 5.4.2
       '@types/react': 18.0.32
     transitivePeerDependencies:
       - supports-color
