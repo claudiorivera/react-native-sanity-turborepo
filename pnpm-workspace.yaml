@@ -1,6 +1,6 @@
 packages:
   - apps/mobile
-  - apps/web
+  - apps/sanity
   - packages/api
   - packages/client
   - packages/config/*

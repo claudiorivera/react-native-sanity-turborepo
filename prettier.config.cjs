@@ -11,7 +11,6 @@ const config = {
 		"^(react/(.*)$)|^(react$)|^(react-native(.*)$)",
 		"^(cms(.*)$)|^(cms$)",
 		"^(mobile(.*)$)|^(mobile$)",
-		"^(web/(.*)$)|^(web$)",
 		"<THIRD_PARTY_MODULES>",
 		"^@acme/(.*)$",
 		"",

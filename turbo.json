@@ -8,7 +8,7 @@
 		},
 		"build": {
 			"dependsOn": ["^build"],
-			"outputs": [".next/**", ".expo/**", ".dist/**"]
+			"outputs": [".expo/**", ".dist/**"]
 		},
 		"lint": {},
 		"lint:fix": {},
@@ -22,14 +22,5 @@
 			"cache": false
 		}
 	},
-	"globalEnv": [
-		"CI",
-		"NEXT_PUBLIC_SANITY_DATASET",
-		"NEXT_PUBLIC_SANITY_PROJECT_ID",
-		"NODE_ENV",
-		"SANITY_TOKEN",
-		"SKIP_ENV_VALIDATION",
-		"VERCEL",
-		"VERCEL_URL"
-	]
+	"globalEnv": ["CI", "NODE_ENV", "SANITY_TOKEN", "SKIP_ENV_VALIDATION"]
 }
