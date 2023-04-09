@@ -4,4 +4,3 @@ packages:
   - packages/api
   - packages/client
   - packages/config/*
-  - packages/schemas

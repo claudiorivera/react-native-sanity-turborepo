@@ -125,9 +125,6 @@ importers:
 
   apps/sanity:
     dependencies:
-      '@acme/schemas':
-        specifier: '*'
-        version: link:../../packages/schemas
       '@sanity/vision':
         specifier: 3.8.3
         version: 3.8.3(@babel/runtime@7.21.0)(@codemirror/lint@6.2.0)(@codemirror/state@6.2.0)(@codemirror/theme-one-dark@6.1.1)(@lezer/common@1.0.2)(codemirror@6.0.1)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@5.3.9)
@@ -249,12 +246,6 @@ importers:
       tailwindcss:
         specifier: 3.3.1
         version: 3.3.1(postcss@8.4.21)
-
-  packages/schemas:
-    devDependencies:
-      typescript:
-        specifier: 5.0.4
-        version: 5.0.4
 
 packages:
 
