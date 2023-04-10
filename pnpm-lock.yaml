@@ -216,9 +216,9 @@ importers:
 
   packages/api:
     dependencies:
-      '@acme/client':
-        specifier: '*'
-        version: link:../client
+      '@sanity/client':
+        specifier: 5.4.2
+        version: 5.4.2
       '@trpc/client':
         specifier: 10.18.0
         version: 10.18.0(@trpc/server@10.18.0)
@@ -238,19 +238,6 @@ importers:
       eslint-config-acme:
         specifier: 0.0.0
         version: link:../config/eslint
-      typescript:
-        specifier: 5.0.3
-        version: 5.0.3
-
-  packages/client:
-    dependencies:
-      '@sanity/client':
-        specifier: 5.4.2
-        version: 5.4.2
-      zod:
-        specifier: 3.21.4
-        version: 3.21.4
-    devDependencies:
       typescript:
         specifier: 5.0.3
         version: 5.0.3
