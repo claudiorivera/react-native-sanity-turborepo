@@ -13,6 +13,7 @@ const server = z.object({
  * built with invalid env vars. To expose them to the client, prefix them with `NEXT_PUBLIC_`.
  */
 const client = z.object({
+	NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: z.string().min(1),
 	NEXT_PUBLIC_SANITY_PROJECT_ID: z.string().min(1),
 	NEXT_PUBLIC_SANITY_DATASET: z.string().min(1),
 });
@@ -25,6 +26,7 @@ const client = z.object({
  */
 const processEnv = {
 	NODE_ENV: process.env.NODE_ENV,
+	NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
 	NEXT_PUBLIC_SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
 	NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET,
 };

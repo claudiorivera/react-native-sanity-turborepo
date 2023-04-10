@@ -1,93 +1,10 @@
-import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 
-import { api, type RouterOutputs } from "~/utils/api";
-
-const PostCard: React.FC<{
-	post: RouterOutputs["post"]["all"][number];
-	onPostDelete?: () => void;
-}> = ({ post, onPostDelete }) => {
-	return (
-		<div className="flex flex-row rounded-lg bg-white/10 p-4 transition-all hover:scale-[101%]">
-			<div className="flex-grow">
-				<Link href={`/posts/${post._id}`}>
-					<h2 className="text-2xl font-bold text-pink-400">{post.title}</h2>
-					<p className="mt-2 text-sm">{post.content}</p>
-				</Link>
-			</div>
-			<div>
-				<span
-					className="cursor-pointer text-sm font-bold uppercase text-pink-400"
-					onClick={onPostDelete}
-				>
-					Delete
-				</span>
-			</div>
-		</div>
-	);
-};
-
-const CreatePostForm: React.FC = () => {
-	const utils = api.useContext();
-
-	const [title, setTitle] = useState("");
-	const [content, setContent] = useState("");
-
-	const { mutate, error } = api.post.create.useMutation({
-		async onSuccess() {
-			setTitle("");
-			setContent("");
-			await utils.post.all.invalidate();
-		},
-	});
-
-	return (
-		<div className="mx-auto flex w-full max-w-2xl flex-col p-4">
-			<input
-				className="mb-2 rounded bg-white/10 p-2 text-white"
-				value={title}
-				onChange={(e) => setTitle(e.target.value)}
-				placeholder="Title"
-			/>
-			{error?.data?.zodError?.fieldErrors.title && (
-				<span className="mb-2 text-red-500">
-					{error.data.zodError.fieldErrors.title}
-				</span>
-			)}
-			<input
-				className="mb-2 rounded bg-white/10 p-2 text-white"
-				value={content}
-				onChange={(e) => setContent(e.target.value)}
-				placeholder="Content"
-			/>
-			{error?.data?.zodError?.fieldErrors.content && (
-				<span className="mb-2 text-red-500">
-					{error.data.zodError.fieldErrors.content}
-				</span>
-			)}
-			<button
-				className="rounded bg-pink-400 p-2 font-bold"
-				onClick={() => {
-					mutate({
-						title,
-						content,
-					});
-				}}
-			>
-				Create
-			</button>
-		</div>
-	);
-};
+import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
-	const postQuery = api.post.all.useQuery();
-
-	const deletePostMutation = api.post.delete.useMutation({
-		onSettled: () => postQuery.refetch(),
-	});
+	const eventQuery = api.event.all.useQuery();
 
 	return (
 		<>
@@ -98,32 +15,13 @@ const Home: NextPage = () => {
 			</Head>
 			<main className="flex h-screen flex-col items-center justify-between bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
 				<div className="container mt-12 flex h-full flex-col items-center justify-center gap-4 px-4 py-8">
-					{postQuery.data ? (
+					{eventQuery.data ? (
 						<div className="w-full max-w-2xl">
-							{postQuery.data?.length === 0 ? (
-								<span>There are no posts!</span>
-							) : (
-								<div className="flex h-[40vh] justify-center overflow-y-scroll px-4 text-2xl">
-									<div className="flex w-full flex-col gap-4">
-										{postQuery.data?.map((p) => {
-											return (
-												<PostCard
-													key={p._id}
-													post={p}
-													onPostDelete={() => deletePostMutation.mutate(p._id)}
-												/>
-											);
-										})}
-									</div>
-								</div>
-							)}
+							{JSON.stringify(eventQuery.data, null, 2)}
 						</div>
 					) : (
 						<p>Loading...</p>
 					)}
-					<div className="mx-auto mt-auto w-full">
-						<CreatePostForm />
-					</div>
 				</div>
 			</main>
 		</>
