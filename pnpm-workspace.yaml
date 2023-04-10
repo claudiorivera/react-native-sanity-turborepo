@@ -3,4 +3,3 @@ packages:
   - apps/web
   - packages/api
   - packages/config/*
-  - packages/schemas

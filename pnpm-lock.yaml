@@ -128,9 +128,6 @@ importers:
       '@acme/api':
         specifier: '*'
         version: link:../../packages/api
-      '@acme/schemas':
-        specifier: '*'
-        version: link:../../packages/schemas
       '@acme/tailwind-config':
         specifier: '*'
         version: link:../../packages/config/tailwind
@@ -284,12 +281,6 @@ importers:
       tailwindcss:
         specifier: 3.3.1
         version: 3.3.1(postcss@8.4.21)
-
-  packages/schemas:
-    devDependencies:
-      typescript:
-        specifier: 5.0.3
-        version: 5.0.3
 
 packages:
 
