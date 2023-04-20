@@ -132,8 +132,8 @@ importers:
         specifier: '*'
         version: link:../../packages/config/tailwind
       '@portabletext/react':
-        specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        specifier: 2.0.3
+        version: 2.0.3(react@18.2.0)
       '@sanity/google-maps-input':
         specifier: 3.0.1
         version: 3.0.1(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(sanity@3.8.3)(styled-components@5.3.9)
@@ -2825,8 +2825,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@portabletext/react@2.0.2(react@18.2.0):
-    resolution: {integrity: sha512-8b325SwY4vAFP1Fu7coJUx/eOoenm197VnCWauJSH0zawwz6n8ouhFc5se1FKPpPPbJMqH3C+RGv2FOWQfB51A==}
+  /@portabletext/react@2.0.3(react@18.2.0):
+    resolution: {integrity: sha512-dfsqsmh4loX28lTRWqUKyNEnsn1+tsJxjs7TVh5C4tpm4lbOjkyHJQwqcziSthr8D8xaMjkFyeGY6yV8HTMQDg==}
     engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
       react: ^17 || ^18
