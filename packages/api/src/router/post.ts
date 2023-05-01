@@ -1,7 +1,21 @@
 import { z } from "zod";
 
-import { createPostSchema, postSchema, postsSchema } from "../sanity";
 import { createTRPCRouter, publicProcedure } from "../trpc";
+
+const postSchema = z.object({
+	_id: z.string(),
+	title: z.string(),
+	content: z.string(),
+	_createdAt: z.string(),
+	_updatedAt: z.string(),
+});
+
+const postsSchema = z.array(postSchema);
+
+const createPostSchema = z.object({
+	title: z.string().min(1),
+	content: z.string().min(1),
+});
 
 export const postRouter = createTRPCRouter({
 	all: publicProcedure.query(async ({ ctx }) => {
