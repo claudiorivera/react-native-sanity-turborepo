@@ -12,7 +12,7 @@
 		"type-check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@sanity/client": "5.4.2",
+		"@sanity/client": "6.0.1",
 		"@trpc/client": "10.23.1",
 		"@trpc/server": "10.23.1",
 		"superjson": "1.12.3",
