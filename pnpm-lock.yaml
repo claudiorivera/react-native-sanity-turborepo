@@ -217,8 +217,8 @@ importers:
   packages/api:
     dependencies:
       '@sanity/client':
-        specifier: 6.0.1
-        version: 6.0.1
+        specifier: 6.1.0
+        version: 6.1.0
       '@trpc/client':
         specifier: 10.26.0
         version: 10.26.0(@trpc/server@10.26.0)
@@ -3229,6 +3229,17 @@ packages:
       - supports-color
     dev: false
 
+  /@sanity/client@6.1.0:
+    resolution: {integrity: sha512-l+cyCG7HhJJC2IgpFeIkF0e+gbtDqRn8n/K8xVs9x1VYcZu6M7651FE3dAxSYsOlQkYetgxXzWW5Y0BvQMXoyQ==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@sanity/eventsource': 5.0.0
+      get-it: 8.1.1
+      rxjs: 7.8.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@sanity/color@2.2.3:
     resolution: {integrity: sha512-b4e6JAHHa/tKpAnLOAHaJyNEHO1l/g2oecN22FWkhTAuKCINPNhPeoeUn5rK5ngKzbXrvynBd/h2849lld3FRg==}
     dev: false
@@ -3430,7 +3441,7 @@ packages:
     peerDependencies:
       react: ^18.0.0
     dependencies:
-      '@sanity/client': 6.0.1
+      '@sanity/client': 6.1.0
       '@sanity/eventsource': 5.0.0
       '@sanity/groq-store': 2.1.0
       '@vercel/stega': 0.0.4
