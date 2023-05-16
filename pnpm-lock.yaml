@@ -217,8 +217,8 @@ importers:
   packages/api:
     dependencies:
       '@sanity/client':
-        specifier: 6.1.0
-        version: 6.1.0
+        specifier: 6.1.1
+        version: 6.1.1
       '@trpc/client':
         specifier: 10.26.0
         version: 10.26.0(@trpc/server@10.26.0)
@@ -3229,8 +3229,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sanity/client@6.1.0:
-    resolution: {integrity: sha512-l+cyCG7HhJJC2IgpFeIkF0e+gbtDqRn8n/K8xVs9x1VYcZu6M7651FE3dAxSYsOlQkYetgxXzWW5Y0BvQMXoyQ==}
+  /@sanity/client@6.1.1:
+    resolution: {integrity: sha512-T93HCjJdvylcc1GysF52C3nYyBwiBvygzzIv44EGrRg/NPlWbr4Kc4WaLPmtIsZwadKL6g6F+tNETd5OSUykuA==}
     engines: {node: '>=14.18'}
     dependencies:
       '@sanity/eventsource': 5.0.0
@@ -3441,7 +3441,7 @@ packages:
     peerDependencies:
       react: ^18.0.0
     dependencies:
-      '@sanity/client': 6.1.0
+      '@sanity/client': 6.1.1
       '@sanity/eventsource': 5.0.0
       '@sanity/groq-store': 2.1.0
       '@vercel/stega': 0.0.4
@@ -3490,7 +3490,7 @@ packages:
   /@sanity/types@3.11.0:
     resolution: {integrity: sha512-paJiwtSTvMZghGjKVc2PlIegQceBOxfkd5V6jNip33Q++GzCM31uvn1+80pDde94kIejo7PcbO24Ikhyyk3zag==}
     dependencies:
-      '@sanity/client': 6.0.1
+      '@sanity/client': 6.1.1
       '@types/react': 18.2.6
     transitivePeerDependencies:
       - supports-color
