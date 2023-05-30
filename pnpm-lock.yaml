@@ -102,8 +102,8 @@ importers:
         specifier: 7.22.3
         version: 7.22.3
       '@expo/config-plugins':
-        specifier: 6.0.1
-        version: 6.0.1
+        specifier: 7.0.0
+        version: 7.0.0
       '@types/react':
         specifier: 18.2.7
         version: 18.2.7
@@ -2340,6 +2340,7 @@ packages:
       xml2js: 0.4.23
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   /@expo/config-plugins@6.0.2:
     resolution: {integrity: sha512-Cn01fXMHwjU042EgO9oO3Mna0o/UCrW91MQLMbJa4pXM41CYGjNgVy1EVXiuRRx/upegHhvltBw5D+JaUm8aZQ==}
@@ -2363,8 +2364,35 @@ packages:
       - supports-color
     dev: false
 
+  /@expo/config-plugins@7.0.0:
+    resolution: {integrity: sha512-4YqBAlcr9rdBk8NVc+40+e6k2tBRv3ZmWRenImNBd3MYxD4FEAZ3aHhm0FylQGXWgfOPnPoAqm0E2a9shNeZMQ==}
+    dependencies:
+      '@expo/config-types': 49.0.0-alpha.1
+      '@expo/json-file': 8.2.37
+      '@expo/plist': 0.0.20
+      '@expo/sdk-runtime-versions': 1.0.0
+      '@react-native/normalize-color': 2.1.0
+      chalk: 4.1.2
+      debug: 4.3.4(supports-color@5.5.0)
+      find-up: 5.0.0
+      getenv: 1.0.0
+      glob: 7.1.6
+      resolve-from: 5.0.0
+      semver: 7.3.8
+      slash: 3.0.0
+      xcode: 3.0.1
+      xml2js: 0.4.23
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@expo/config-types@48.0.0:
     resolution: {integrity: sha512-DwyV4jTy/+cLzXGAo1xftS6mVlSiLIWZjl9DjTCLPFVgNYQxnh7htPilRv4rBhiNs7KaznWqKU70+4zQoKVT9A==}
+    dev: false
+
+  /@expo/config-types@49.0.0-alpha.1:
+    resolution: {integrity: sha512-zNqLOEEuVWmsc/Igi2+f1oB0TH2xiqihxjAD/URO2l/r3gYGfaTTw1pP2hn2MACCynxQxLKVL/j77YCr0N346A==}
+    dev: true
 
   /@expo/config@8.0.2:
     resolution: {integrity: sha512-WubrzTNNdAXy1FU8TdyQ7D9YtDj2tN3fWXDq+C8In+nB7Qc08zwH9cVdaGZ+rBVmjFZBh5ACfObKq/m9cm4QQA==}
