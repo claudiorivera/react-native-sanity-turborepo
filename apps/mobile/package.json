@@ -19,7 +19,7 @@
 		"@trpc/client": "10.28.1",
 		"@trpc/react-query": "10.28.1",
 		"@trpc/server": "10.28.1",
-		"expo": "48.0.17",
+		"expo": "48.0.18",
 		"expo-constants": "14.2.1",
 		"expo-linking": "4.0.1",
 		"expo-router": "1.4.3",
