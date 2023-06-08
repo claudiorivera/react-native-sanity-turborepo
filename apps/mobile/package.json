@@ -33,9 +33,9 @@
 		"react-native-screens": "3.20.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.22.1",
-		"@babel/preset-env": "7.22.4",
-		"@babel/runtime": "7.22.3",
+		"@babel/core": "7.22.5",
+		"@babel/preset-env": "7.22.5",
+		"@babel/runtime": "7.22.5",
 		"@expo/config-plugins": "6.0.2",
 		"@types/react": "18.2.9",
 		"eslint": "8.40.0",
