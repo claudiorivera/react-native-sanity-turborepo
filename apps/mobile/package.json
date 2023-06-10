@@ -37,7 +37,7 @@
 		"@babel/preset-env": "7.22.5",
 		"@babel/runtime": "7.22.5",
 		"@expo/config-plugins": "6.0.2",
-		"@types/react": "18.2.10",
+		"@types/react": "18.2.11",
 		"eslint": "8.42.0",
 		"eslint-config-acme": "0.0.0",
 		"postcss": "8.4.24",
